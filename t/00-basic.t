@@ -35,7 +35,8 @@ use Mason;
     is( $interp->run("/00-basic/hello")->output, "hello");
     is( $interp->run("/00-basic/no_main")->output, "Base");
     is( $interp->run("/00-basic/blank_line")->output, "Base");
-    is( $interp->run("/00-basic/blank_lines")->output, "Base");
+    is( $interp->run("/00-basic/blank_lines")->output, "\n\n");
+    is( $interp->run("/00-basic/lines")->output, "\na\n\nb\n\nc\n\n");
 }
 
 done_testing();
