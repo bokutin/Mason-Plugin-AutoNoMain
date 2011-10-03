@@ -1,0 +1,4 @@
+<%method hi>
+hi
+</%method>
+
